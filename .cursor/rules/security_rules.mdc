@@ -1,0 +1,40 @@
+---
+description: 
+globs: 
+---
+---
+description: AI rules for application security and data protection.
+globs: **/*
+---
+
+# 🔐 Security AI Ruleset
+
+## 🎯 Authentication & Authorization
+- **Implement OAuth2/OIDC** for authentication
+- **Use JWT with appropriate expiration**
+- **Implement MFA** for sensitive operations
+- **Use role-based access control (RBAC)**
+
+## 🛡️ Data Protection
+- **Encrypt sensitive data at rest**
+- **Use TLS 1.3 for data in transit**
+- **Implement proper session management**
+- **Hash passwords using strong algorithms** (bcrypt, Argon2)
+
+## 🔍 Input Validation
+- **Validate all user inputs**
+- **Implement rate limiting**
+- **Use parameterized queries**
+- **Sanitize file uploads**
+
+## 🚫 Common Attack Prevention
+- **Prevent XSS attacks** using CSP
+- **Implement CSRF tokens**
+- **Set secure HTTP headers**
+- **Prevent SQL injection**
+
+## 📝 Logging & Monitoring
+- **Log security events**
+- **Implement audit trails**
+- **Monitor for suspicious activity**
+- **Set up automated alerts**

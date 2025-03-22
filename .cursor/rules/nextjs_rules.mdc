@@ -1,0 +1,33 @@
+---
+description: AI rules for Next.js static and dynamic site generation.
+globs: **/*.{js,ts,jsx,tsx}
+---
+
+# 🚀 Next.js AI Ruleset
+
+## 🏗️ Development Guidelines
+- **Think step-by-step before writing code.**  
+- **Use pseudocode** to describe the approach before implementation.  
+- **Use Next.js static generation (`getStaticProps()`) where possible** to improve performance.
+- **Use Incremental Static Regeneration (`ISR`) for frequently updating pages.**
+- **Use Server-Side Rendering (`getServerSideProps()`) only when necessary.**
+- **Avoid unnecessary API calls inside components**—use Next.js data fetching methods.
+
+## ⚡ Performance & Optimization
+- **Use Next.js Image Optimization (`next/image`)** instead of plain `<img>`.
+- **Enable automatic static optimization** by avoiding `getServerSideProps()` unless needed.
+- **Use `next/script` for optimized script loading.**
+- **Apply caching headers in API routes** to prevent redundant requests.
+- **Use dynamic imports (`React.lazy()` or `import()`)** for large components.
+
+## 🔐 Security Best Practices
+- **Validate API input in Next.js API routes (`/pages/api/`).**
+- **Sanitize and escape dynamic route parameters (`slug`, `id`, etc.).**
+- **Disable API endpoints that should not be public (`X-Robots-Tag: noindex`).**
+- **Use environment variables (`process.env.*`) for API keys instead of hardcoding.**
+
+## 🔍 Code Quality
+- **Use early returns whenever possible to improve readability.**
+- **Follow best practices for component structure and modularity.**
+- **Use descriptive function names (`handleClick()`, `handleSubmit()`).**
+- **Avoid large monolithic components—break them down into smaller reusable components.**

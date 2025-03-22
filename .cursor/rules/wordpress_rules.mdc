@@ -1,0 +1,73 @@
+---
+description: 
+globs: 
+---
+---
+description: AI rules for WordPress, WooCommerce, PHP, and Tailwind CSS.
+globs: **/*.php
+---
+
+# 🎯 WordPress Development AI Ruleset
+
+## 🏗️ Core Directives
+- **Provide clear, technical, and actionable solutions** for WordPress, WooCommerce, PHP, and Tailwind CSS workflows.
+- **Follow modular and scalable development practices** with maintainable code.
+- **Adhere to WordPress & WooCommerce coding standards** while leveraging modern PHP features.
+- **Avoid modifying WordPress core files**; extend functionality using hooks (`add_action()`, `add_filter()`).
+
+## 🏗️ Object-Oriented Programming (OOP)
+- Use **OOP principles** for reusability and modularity.
+- Prefer **dependency injection** over global variables where possible.
+- Organize **WordPress classes into namespaces** (`MyTheme\Classes\`).
+
+## 📦 Custom Post Types (CPTs) & Taxonomies
+- **Use CPTs & taxonomies** for structured content organization.
+- **Leverage ACF (Advanced Custom Fields)** for managing custom fields.
+- **For repeaters, prefer using related CPTs or taxonomies** instead of premium ACF features.
+
+## 🎨 Styling with Tailwind CSS
+- **Use Tailwind CSS for a utility-first approach**.
+- Compile styles with **Vite, Laravel Mix, or Gulp**.
+- **Optimize Tailwind’s PurgeCSS settings** to remove unused styles.
+- **Maintain a scalable, responsive design** throughout themes.
+
+## 🔧 PHP Practices
+- **Use `declare(strict_types=1);`** to enforce type safety.
+- **Follow modern PHP conventions**, including arrow functions and strict type declarations.
+- **Utilize WordPress core sanitization functions** (`sanitize_text_field()`, `wp_kses_post()`).
+- **Secure database queries** using `$wpdb->prepare()`, avoid raw SQL queries.
+
+## ⚡ Asset Management
+- Enqueue scripts and styles using **`wp_enqueue_script()`** and **`wp_enqueue_style()`**.
+- **Use conditional loading** to optimize asset delivery.
+- Avoid **blocking scripts in the `<head>` tag**; defer or enqueue them in the footer.
+
+## 🚀 Error Handling & Debugging
+- Enable **`WP_DEBUG` and `WP_DEBUG_LOG`** for structured debugging.
+- **Use `error_log()`** for non-WordPress environments.
+- WooCommerce debugging should use **built-in logging (`wc_get_logger()`)**.
+
+## ⚡ Performance & Optimization
+- Use **WordPress Transients API** for caching performance gains.
+- **Optimize long-running tasks with `wp_cron()`** for background processes.
+- **Minimize database queries** by preferring `get_posts()` over raw SQL.
+
+## 🔐 Security Best Practices
+- **Use nonces** for form validation and input security (`wp_nonce_field()`, `check_admin_referer()`).
+- **Sanitize and escape all input/output** (`esc_html()`, `esc_attr()`, `sanitize_text_field()`).
+- **Ensure roles & capabilities are validated** before executing admin actions.
+
+## 🌍 Internationalization & Accessibility
+- **Ensure all strings are translatable** using `__()` and `_e()`.
+- **Support RTL layouts** with appropriate CSS adjustments.
+- **Ensure accessibility compliance** (ARIA attributes, keyboard navigability).
+
+## 🛠 Example Use Cases
+- **CPT + ACF Integration:** Add custom fields to CPTs without premium ACF plugins.
+- **Tailwind in WordPress:** Enqueue Tailwind-generated styles efficiently.
+- **Optimized Asset Loading:** Load only required scripts per page.
+
+## ❌ Conflict Prevention
+- **Avoid global rules conflicting with project-specific settings**.
+- **Ensure Tailwind is only recommended where applicable**.
+- **Follow project-defined environment settings (local vs production).**

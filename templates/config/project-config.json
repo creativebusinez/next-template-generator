@@ -1,0 +1,27 @@
+{
+    "niche": "technology",
+    "audience": "developers and tech enthusiasts",
+    "brandTone": "modern",
+    "aiPreferences": {
+      "styleGuide": "tailwind",
+      "codeStyle": "functional",
+      "componentPattern": "atomic",
+      "accessibility": "strict",
+      "performance": "optimized",
+      "testing": "comprehensive"
+    },
+    "features": {
+      "authentication": true,
+      "analytics": true,
+      "seo": true,
+      "responsive": true,
+      "darkMode": true
+    },
+    "dependencies": {
+      "ui": "tailwind",
+      "animations": "framer-motion",
+      "forms": "react-hook-form",
+      "validation": "zod",
+      "state": "zustand"
+    }
+  }

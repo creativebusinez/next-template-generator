@@ -1,0 +1,53 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: AI rules for blog/content Next.js projects
+globs: **/*.{js,ts,jsx,tsx}
+---
+
+# 📝 Blog & Content Platform Rules
+
+## 📰 Article Layout
+- **Use readable typography** with appropriate line height and spacing
+- **Implement estimated reading time** display on article pages
+- **Create responsive image handling** for article featured images
+- **Design clear article metadata** showing date, author, and categories
+- **Implement table of contents** for longer articles
+
+## 🔍 Content Discovery
+- **Create tag and category systems** for content organization
+- **Implement site search with content highlighting** for blog posts
+- **Design related articles sections** at the end of each post
+- **Create featured and popular content sections** on the home page
+- **Implement pagination or infinite scroll** for content browsing
+
+## 👤 Author Experience
+- **Design author profile pages** with biography and article listings
+- **Implement author avatars** next to article bylines
+- **Create social sharing options** for articles
+- **Include author contact information** where appropriate
+- **Implement author attribution** in snippets and search results
+
+## 💬 Community Engagement
+- **Implement comment systems** that are spam-resistant
+- **Create social sharing functionality** for all content
+- **Design newsletter signup components** for audience retention
+- **Implement reactions or like functionality** for reader feedback
+- **Create community features** like user profiles and favoriting
+
+## 📱 Content Consumption
+- **Optimize reading experience for mobile** with appropriate font sizes
+- **Implement dark mode support** for comfortable reading
+- **Create print-friendly article views** for offline reading
+- **Design responsive media embeds** for videos and interactive content
+- **Implement read progress indicators** for longer articles
+
+## 📈 Content Analytics
+- **Track article performance metrics** like views and read completion
+- **Implement heatmaps** to understand reader engagement
+- **Design A/B testing capabilities** for headlines and layouts
+- **Create systems for popular content identification** based on metrics
+- **Implement analytics dashboards** for content performance tracking

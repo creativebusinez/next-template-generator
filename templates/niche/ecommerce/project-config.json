@@ -1,0 +1,26 @@
+{
+  "niche": "ecommerce",
+  "audience": "online shoppers",
+  "brandTone": "professional",
+  "aiPreferences": {
+    "styleGuide": "tailwind",
+    "codeStyle": "functional",
+    "componentPattern": "atomic"
+  },
+  "features": {
+    "authentication": true,
+    "cart": true,
+    "checkout": true,
+    "productListing": true,
+    "search": true,
+    "responsive": true
+  },
+  "dependencies": {
+    "ui": "tailwind",
+    "animations": "framer-motion",
+    "forms": "react-hook-form",
+    "validation": "zod",
+    "state": "zustand",
+    "payment": "stripe"
+  }
+}

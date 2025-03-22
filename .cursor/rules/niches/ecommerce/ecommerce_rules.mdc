@@ -1,0 +1,53 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: AI rules for ecommerce Next.js projects
+globs: **/*.{js,ts,jsx,tsx}
+---
+
+# 🛍️ Ecommerce UI & Experience Rules
+
+## 🛒 Product Display
+- **Use consistent product card layouts** across all catalog views
+- **Display clear pricing** with any discounts or sale indicators
+- **Implement clean product image galleries** with zoom functionality
+- **Include "Add to Cart" buttons** with clear visual hierarchy
+- **Show inventory status** when stock is limited
+
+## 🧺 Shopping Cart
+- **Provide a persistent mini-cart** that's accessible from all pages
+- **Show product thumbnails in cart** for easy recognition
+- **Allow quantity adjustments** directly in the cart
+- **Calculate and display totals** including tax and shipping estimates
+- **Display shipping options** with clear pricing
+
+## 💳 Checkout Flow
+- **Design a multi-step checkout** with progress indicators
+- **Implement address validation** to prevent shipping errors
+- **Provide guest checkout option** to reduce friction
+- **Support multiple payment methods** including credit cards and digital wallets
+- **Show order summary** at all stages of checkout
+
+## 🔍 Search & Navigation
+- **Implement faceted search** with filters for product attributes
+- **Use breadcrumb navigation** for catalog browsing
+- **Create intuitive category structure** for easy product discovery
+- **Include autocomplete in search** with product suggestions
+- **Provide sorting options** for price, popularity, and relevance
+
+## 📱 Mobile Experience
+- **Design touch-friendly product interactions** for mobile
+- **Optimize checkout for mobile** with simplified forms
+- **Implement mobile-specific navigation patterns** for category browsing
+- **Ensure tap targets are adequately sized** for touch interactions
+- **Use horizontal scrolling for product recommendations** on mobile
+
+## 💌 Customer Communication
+- **Implement order confirmation emails** with order details
+- **Create shipping notification system** with tracking links
+- **Design abandoned cart recovery emails** to recapture sales
+- **Provide account-related notifications** for registration and password resets
+- **Include personalized product recommendations** based on browsing history

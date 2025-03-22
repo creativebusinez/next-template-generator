@@ -1,0 +1,17 @@
+---
+description: 
+globs: 
+---
+---
+description: AI rules for Docker containerization.
+globs: {Dockerfile,docker-compose.yml}
+---
+
+# 🐳 Docker AI Ruleset
+
+## 🎯 Best Practices
+- **Use multi-stage builds**
+- **Minimize layer size**
+- **Follow security best practices**
+- **Implement proper volume management**
+- **Use environment variables for configuration**

@@ -1,0 +1,17 @@
+---
+description: 
+globs: 
+---
+---
+description: AI rules for handling APIs and external data in Next.js.
+globs: **/*.{js,ts,tsx}
+---
+
+# 🌎 API Handling AI Ruleset
+
+## 📌 Best Practices
+- **Use `getStaticProps()` for static data fetching when possible.**
+- **Use `getServerSideProps()` only if real-time data is required.**
+- **Prefer SWR or React Query for client-side data fetching.**
+- **Cache API responses to minimize redundant requests.**
+- **Handle errors gracefully and display proper UI feedback.**

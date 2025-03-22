@@ -1,0 +1,17 @@
+---
+description: 
+globs: 
+---
+---
+description: AI rules for animations using Framer Motion in Next.js.
+globs: **/*.{js,ts,tsx}
+---
+
+# 🎭 Animation & Motion AI Ruleset
+
+## 🎯 Best Practices
+- **Use Framer Motion (`motion.div`) for complex page transitions.**
+- **Keep animations lightweight—avoid overloading re-renders.**
+- **Use CSS `transform` instead of animating absolute positions.**
+- **Apply `will-change: transform` to elements with animations.**
+- **Use `exit={{ opacity: 0 }}` to handle page unmounting in Next.js.**

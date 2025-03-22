@@ -1,0 +1,22 @@
+---
+description: 
+globs: 
+---
+---
+description: AI rules for Tailwind CSS in Next.js projects.
+globs: **/*.{js,ts,tsx,css}
+---
+
+# 🎨 Tailwind CSS AI Ruleset
+
+## 📌 Best Practices
+- **Use Tailwind’s utility classes for styling; avoid inline styles or separate CSS files.**
+- **Avoid deep nesting in CSS—use Tailwind’s built-in classes for clarity.**
+- **Use responsive prefixes (`sm:`, `md:`, `lg:`) instead of media queries.**
+- **Ensure Tailwind classes are not duplicated unnecessarily.**
+- **Enable PurgeCSS to remove unused styles in production.**
+
+## 📐 Layout & Design
+- **Use `flex` and `grid` utilities instead of custom layouts.**
+- **Prefer `gap-*` for spacing over `margin` when using flex/grid.**
+- **Use Tailwind’s `theme()` function in `tailwind.config.js` for reusable styles.**

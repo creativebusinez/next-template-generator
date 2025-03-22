@@ -1,0 +1,40 @@
+---
+description: 
+globs: 
+---
+---
+description: AI rules for CI/CD, automation, and deployment workflows.
+globs: **/*.{yml,yaml,json,sh}
+---
+
+# 🚀 Automation & CI/CD AI Ruleset
+
+## 🎯 CI/CD Pipeline Structure
+- **Use GitHub Actions or GitLab CI** for automated workflows
+- **Implement branch protection rules** for main/production branches
+- **Automate version bumping** using semantic versioning
+- **Set up automated dependency updates** (Dependabot, Renovate)
+
+## 📦 Build Process
+- **Use Docker for consistent environments**
+- **Implement multi-stage builds** to minimize image size
+- **Cache dependencies** between pipeline runs
+- **Set up parallel job execution** where possible
+
+## 🔍 Testing & Quality Gates
+- **Run automated tests** before deployment
+- **Implement code coverage thresholds**
+- **Perform security scans** (SAST, SCA)
+- **Check for formatting/linting issues**
+
+## 🚀 Deployment Strategies
+- **Use zero-downtime deployments**
+- **Implement blue-green or canary deployments**
+- **Set up automatic rollbacks**
+- **Use infrastructure as code** (Terraform, CloudFormation)
+
+## 🔐 Security & Compliance
+- **Scan Docker images** for vulnerabilities
+- **Rotate secrets automatically**
+- **Implement RBAC** for deployment permissions
+- **Log all deployment activities**

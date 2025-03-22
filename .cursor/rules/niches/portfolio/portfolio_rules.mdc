@@ -1,0 +1,53 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: AI rules for portfolio/showcase Next.js projects
+globs: **/*.{js,ts,jsx,tsx}
+---
+
+# 🎨 Portfolio & Showcase Rules
+
+## 📂 Project Showcase
+- **Create visually striking project cards** that highlight work
+- **Implement project filtering** by category, technology, or date
+- **Design detailed project pages** with comprehensive information
+- **Include high-quality project imagery** with optimized loading
+- **Implement before/after comparisons** where applicable
+
+## 🖼️ Visual Presentation
+- **Design image galleries with lightbox functionality** for viewing detail
+- **Implement lazy loading for imagery** to improve performance
+- **Create responsive masonry or grid layouts** for visual appeal
+- **Use subtle animations** to enhance visual interest
+- **Implement video embedding** for motion work and demonstrations
+
+## 👤 Personal Branding
+- **Design a compelling about/bio section** that highlights expertise
+- **Create a visual representation of skills** with appropriate graphics
+- **Implement testimonials or recommendations** from clients/employers
+- **Design a clear call-to-action** for contact or hiring
+- **Create custom logo and favicon** for brand recognition
+
+## 🎯 Case Studies
+- **Structure case studies logically** with problem, process, and solution
+- **Implement visual storytelling elements** to showcase process
+- **Create metrics/results displays** to demonstrate success
+- **Design client/project information sections** with key details
+- **Include technology stack information** where relevant
+
+## 📱 Experience Optimization
+- **Create a memorable loading experience** that reflects brand
+- **Implement smooth page transitions** for a polished feel
+- **Design mobile-optimized project viewing** for on-the-go browsing
+- **Create interactive elements** that showcase technical skills
+- **Implement intuitive navigation** between projects and sections
+
+## 🔗 Professional Connections
+- **Include downloadable resume/CV** in appropriate format
+- **Create links to professional profiles** like LinkedIn and GitHub
+- **Implement contact forms with validation** for inquiry handling
+- **Design social proof elements** like follower counts or client logos
+- **Create availability indicators** for freelance or job opportunities

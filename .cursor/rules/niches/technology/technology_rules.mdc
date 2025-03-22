@@ -1,0 +1,48 @@
+---
+description: AI rules for technology/SaaS Next.js projects
+globs: **/*.{js,ts,jsx,tsx}
+---
+
+# 💻 Technology & SaaS Platform Rules
+
+## 🚀 Product Showcase
+- **Create clear feature highlights** with meaningful icons
+- **Implement interactive product demonstrations** where possible
+- **Design comparison tables** for pricing or features
+- **Create clear value proposition sections** highlighting benefits
+- **Implement testimonials and case studies** for social proof
+
+## 📊 Dashboard UX
+- **Design intuitive dashboard layouts** with clear information hierarchy
+- **Implement data visualization components** for metrics and analytics
+- **Create responsive admin interfaces** that work across devices
+- **Design clear navigation systems** for complex applications
+- **Implement appropriate loading states** for data-heavy components
+
+## 🔐 User Management
+- **Design clear authentication flows** with appropriate validation
+- **Implement account management interfaces** for user settings
+- **Create permissions and roles systems** for team-based products
+- **Design secure password reset and recovery processes**
+- **Implement user onboarding experiences** to improve adoption
+
+## 📱 Application Experience
+- **Create consistent UI component systems** across the application
+- **Implement form validation and error handling** with clear feedback
+- **Design notification systems** for important updates or actions
+- **Create skeleton loaders** for content-heavy interfaces
+- **Implement tooltips and help systems** for complex features
+
+## 📈 Data Presentation
+- **Design effective data tables** with sorting and filtering
+- **Implement data export functionality** in appropriate formats
+- **Create pagination or infinite scroll** for large data sets
+- **Design clear data visualization components** like charts and graphs
+- **Implement data filtering and search** for information retrieval
+
+## 🔄 Integration & API
+- **Create developer documentation components** for API usage
+- **Implement integration showcase pages** for connected services
+- **Design API key management interfaces** for developer users
+- **Create webhook configuration components** for advanced integration
+- **Implement status indicators** for service health and API uptime 

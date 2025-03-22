@@ -1,0 +1,18 @@
+---
+description: AI rules for GSAP animations in JavaScript projects.
+globs: **/*.{js,ts}
+---
+
+# 🚀 GSAP AI Ruleset
+
+## 🎯 Best Practices
+- **Use GSAP timelines (`gsap.timeline()`) for multi-step animations.**
+- **Use `gsap.to()` for state-based animations instead of direct DOM manipulation.**
+- **Use `ScrollTrigger` for scroll-based animations.**
+- **Always `clearProps: "all"` on elements that get animated dynamically.**
+- **Use `.set()` for initial states instead of inline styles.**
+- **Avoid excessive simultaneous animations—batch them for performance.**
+
+## 🏗️ Example Best Practice
+```js
+gsap.to(".box", { duration: 1, x: 100, opacity: 1, ease: "power2.out" });

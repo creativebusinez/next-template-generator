@@ -1,0 +1,17 @@
+---
+description: 
+globs: 
+---
+---
+description: AI rules for Composer package management.
+globs: composer.{json,lock}
+---
+
+# 📦 Composer AI Ruleset
+
+## 🎯 Best Practices
+- **Lock dependencies to specific versions**
+- **Use autoloading PSR-4 standard**
+- **Maintain clean version constraints**
+- **Use development dependencies appropriately**
+- **Implement security checks with `composer audit`**

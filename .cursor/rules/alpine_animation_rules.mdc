@@ -1,0 +1,27 @@
+---
+description: 
+globs: 
+---
+---
+description: AI rules for Alpine.js animations.
+globs: **/*.{html,js}
+---
+
+# 🌄 Alpine.js Animation AI Ruleset
+
+## 🎯 Best Practices
+- **Use `x-transition` instead of CSS animations for dynamic elements.**
+- **Use `x-data` with `x-show` for smooth state-based animations.**
+- **Avoid unnecessary JavaScript for basic show/hide effects—use Alpine’s built-in methods.**
+- **Use `x-init` for animation triggers instead of `setTimeout()`.**
+- **Optimize `x-transition` settings for performance in heavy UI elements.**
+
+## 🏗️ Example Best Practice
+```html
+<div x-data="{ open: false }">
+  <button @click="open = !open">Toggle</button>
+  <div x-show="open" x-transition:enter="ease-out duration-300">
+    Animated Content
+  </div>
+</div>
+```

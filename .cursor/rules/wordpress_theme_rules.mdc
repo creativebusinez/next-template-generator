@@ -1,0 +1,100 @@
+---
+description: 
+globs: 
+---
+---
+description: AI rules for WordPress theme development
+globs: 
+  - style.css
+  - functions.php
+  - template-*.php
+  - header.php
+  - footer.php
+  - index.php
+  - single.php
+  - archive.php
+---
+
+# 🎨 WordPress Theme Development Rules
+
+## 🎯 Theme Best Practices
+- Use `get_template_part()` for reusable components
+- Implement proper template hierarchy
+- Use WordPress core functions over custom solutions
+- Follow WordPress coding standards for PHP
+- Implement proper theme hooks and filters
+
+## 📁 File Structure
+- Keep template files in root directory
+- Place component files in /template-parts/
+- Store assets in /assets/ directory
+- Use /inc/ for additional functions
+- Follow WordPress template hierarchy naming
+
+## 🔒 Security
+- Escape output with appropriate functions:
+  - `esc_html()` for plain text
+  - `esc_attr()` for attributes
+  - `esc_url()` for URLs
+  - `wp_kses()` for allowed HTML
+- Validate and sanitize inputs
+- Use nonces for forms
+- Check permissions with proper capabilities
+
+## 🎨 Styling
+- Use theme.json for global styles (Block themes)
+- Enqueue styles properly via functions.php
+- Follow BEM naming convention for classes
+- Implement responsive design patterns
+- Use WordPress core classes
+
+## 🛠️ Functions
+- Prefix all custom functions with theme slug
+- Use action hooks for initialization
+- Register scripts/styles properly
+- Implement proper theme supports
+- Use child theme compatibility checks
+
+## 📦 Assets
+- Enqueue assets with wp_enqueue_*
+- Use proper dependency management
+- Implement version control for cache busting
+- Optimize images and assets
+- Use SVG for icons when possible
+
+## 🔍 SEO
+- Use semantic HTML structure
+- Implement proper heading hierarchy
+- Add schema markup where appropriate
+- Use title tags correctly
+- Support custom meta descriptions
+
+## 🌐 Internationalization
+- Use translation functions:
+  - `__()` for strings
+  - `_e()` for echoing strings
+  - `esc_html__()` for escaped strings
+- Load text domain properly
+- Support RTL languages
+- Use proper language files
+
+## 🧩 Blocks (Modern Themes)
+- Register block patterns appropriately
+- Use theme.json for block settings
+- Implement proper block templates
+- Support full-site editing features
+- Style blocks consistently
+
+## ⚡ Performance
+- Optimize template parts loading
+- Minimize database queries
+- Cache expensive operations
+- Load assets efficiently
+- Use WordPress object cache
+
+## 🔄 Updates
+- Use semantic versioning
+- Maintain changelog
+- Test with latest WordPress version
+- Support automatic updates
+- Document breaking changes

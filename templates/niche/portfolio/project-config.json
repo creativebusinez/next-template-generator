@@ -1,0 +1,25 @@
+{
+  "niche": "portfolio",
+  "audience": "potential clients and employers",
+  "brandTone": "creative",
+  "aiPreferences": {
+    "styleGuide": "tailwind",
+    "codeStyle": "functional",
+    "componentPattern": "atomic"
+  },
+  "features": {
+    "projects": true,
+    "skills": true,
+    "timeline": true,
+    "contact": true,
+    "responsive": true,
+    "animations": true
+  },
+  "dependencies": {
+    "ui": "tailwind",
+    "animations": "framer-motion",
+    "forms": "react-hook-form",
+    "validation": "zod",
+    "state": "zustand"
+  }
+}

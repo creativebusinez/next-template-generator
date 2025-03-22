@@ -1,0 +1,40 @@
+---
+description: 
+globs: 
+---
+---
+description: AI rules for React development best practices.
+globs: **/*.{jsx,tsx}
+---
+
+# ⚛️ React AI Ruleset
+
+## 🎯 Component Architecture
+- **Use functional components** with hooks
+- **Implement proper prop typing**
+- **Break down complex components**
+- **Use React.memo() for optimization**
+
+## 🪝 Hooks Usage
+- **Follow hooks rules** (top-level calls only)
+- **Custom hooks for reusable logic**
+- **Use appropriate built-in hooks**
+- **Implement cleanup in useEffect**
+
+## ⚡ Performance Optimization
+- **Lazy load components**
+- **Use proper key props**
+- **Implement virtualization** for long lists
+- **Optimize re-renders**
+
+## 🔍 State Management
+- **Use Context API** for global state
+- **Implement Redux** for complex state
+- **Local state with useState**
+- **Proper state immutability**
+
+## 🧪 Testing
+- **Write unit tests** with React Testing Library
+- **Implement integration tests**
+- **Use snapshot testing** where appropriate
+- **Test error boundaries**

@@ -1,0 +1,42 @@
+{
+  "niche": "ecommerce",
+  "audience": "online shoppers and retail businesses",
+  "brandTone": "professional",
+  "aiPreferences": {
+    "styleGuide": "tailwind",
+    "codeStyle": "functional",
+    "componentPattern": "atomic",
+    "accessibility": "strict",
+    "performance": "optimized",
+    "testing": "comprehensive",
+    "seo": "advanced"
+  },
+  "features": {
+    "authentication": true,
+    "analytics": true,
+    "seo": true,
+    "responsive": true,
+    "darkMode": true,
+    "cart": true,
+    "checkout": true,
+    "productSearch": true,
+    "filters": true,
+    "reviews": true
+  },
+  "dependencies": {
+    "ui": "tailwind",
+    "animations": "framer-motion",
+    "forms": "react-hook-form",
+    "validation": "zod",
+    "state": "zustand",
+    "payment": "stripe",
+    "cms": "contentful",
+    "analytics": "google-analytics",
+    "email": "sendgrid"
+  },
+  "deployment": {
+    "platform": "vercel",
+    "environment": "production",
+    "cdn": "cloudflare"
+  }
+}

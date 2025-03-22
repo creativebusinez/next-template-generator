@@ -1,0 +1,153 @@
+---
+description: 
+globs: 
+---
+---
+description: AI rules for UI/UX design, Tailwind CSS, accessibility, and performance optimization.
+globs: **/*.{tsx,jsx,css,scss}
+---
+
+# 🎨 UI/UX & Responsive Design AI Ruleset
+
+## 🎯 Core Principles
+- **Create intuitive, accessible, and high-performance UI designs**.
+- **Prioritize clarity, hierarchy, and consistency** in UI components.
+- **Ensure UI components are modular and reusable** for maintainability.
+- **Follow industry-standard accessibility guidelines (WCAG 2.1 AA)**.
+
+---
+
+## 📌 **Visual Design**
+- Establish **clear visual hierarchy** to guide user attention.
+- Choose a **cohesive color palette** that reflects brand identity.
+- Use **typography effectively** for readability and emphasis.
+- Maintain **sufficient contrast** for accessibility (WCAG 2.1 AA).
+- Ensure **consistent UI styling** across the application.
+
+## 🎭 **Interaction Design**
+- Design **intuitive navigation patterns** that minimize user friction.
+- Use **familiar UI components** to reduce cognitive load.
+- Provide **clear calls-to-action (CTAs)** to guide user behavior.
+- Implement **responsive design** with mobile-first principles.
+- Use **animations subtly** to enhance user experience without distraction.
+
+## 🌍 **Accessibility**
+- Follow **WCAG guidelines** for accessibility compliance.
+- Use **semantic HTML** to enhance screen reader support.
+- Provide **alternative text for images and media**.
+- Ensure **keyboard navigability** for all interactive elements.
+- Test with **assistive technologies** for usability validation.
+
+## ⚡ **Performance Optimization**
+- Optimize **images and assets** to minimize load times.
+- Implement **lazy loading** for non-critical resources.
+- Use **code splitting** to improve initial load performance.
+- Monitor and optimize **Core Web Vitals (LCP, FID, CLS)**.
+
+## 📊 **User Feedback**
+- Use **clear feedback mechanisms** for user actions (e.g., success/fail states).
+- Show **loading indicators** for asynchronous operations.
+- Provide **helpful error messages** with actionable recovery options.
+- Implement **analytics tracking** to monitor user behavior and pain points.
+
+## 🔎 **Information Architecture**
+- Organize content **logically** for easy navigation.
+- Use **clear labeling and categorization** for menus and search.
+- Ensure **effective search functionality** for content-heavy applications.
+- Provide a **sitemap** for better structural visualization.
+
+---
+
+## 📱 **Mobile-First & Responsive Design**
+- Design **mobile-first** and progressively enhance for larger screens.
+- Use **touch-friendly UI elements** for better usability.
+- Implement **gestures (swipe, pinch-to-zoom) where applicable**.
+- Prioritize **important elements within thumb-friendly zones**.
+
+## 🎨 **Consistency & Design Systems**
+- Develop and follow a **design system** for UI consistency.
+- Maintain **consistent terminology and UI patterns** across the app.
+- Ensure **recurrent elements (buttons, modals) have fixed positions**.
+- Keep UI elements **aligned across different screen sizes**.
+
+## 🔄 **Testing & Iteration**
+- Conduct **A/B testing** for key design choices.
+- Use **heatmaps and session recordings** for behavioral insights.
+- Regularly gather and incorporate **user feedback**.
+- Continuously refine UI components **based on performance data**.
+
+---
+
+## 📖 **Documentation & Best Practices**
+- Maintain a **comprehensive style guide** for UI components.
+- Document **common design patterns and interactions**.
+- Provide **user flow diagrams** for complex interactions.
+- Ensure **design assets are structured and accessible** to the team.
+
+## 📐 **Fluid Layouts & Flexible Grid Systems**
+- Use **relative units** (`%, em, rem`) instead of fixed pixels.
+- Implement **CSS Grid & Flexbox** for adaptable layouts.
+- Use **mobile-first CSS breakpoints** and **progressive enhancement**.
+
+## 🎥 **Images & Media Optimization**
+- Use **responsive images (`srcset`, `sizes`)** for different devices.
+- Implement **lazy loading** for images and embedded media.
+- Make embedded content **responsive via CSS (`aspect-ratio`, flex/grid)**.
+
+## 🔤 **Typography & Readability**
+- Use **relative units (`rem`, `em`)** for font sizing.
+- Adjust **line heights and letter spacing** for readability.
+- Maintain a **consistent typographic scale across breakpoints**.
+
+## 🖱️ **Touch Targets & Interactivity**
+- Ensure **minimum touch target size** (`44x44px`) for buttons and links.
+- Provide **adequate spacing** between interactive elements.
+- Implement **hover states for desktop** and **focus states for touch/keyboard**.
+
+## 🚀 **Performance Best Practices**
+- Optimize assets for **fast loading on slow connections**.
+- Use **CSS animations over JavaScript where possible** for efficiency.
+- Implement **critical CSS** for above-the-fold content.
+
+## 🏆 **Content Prioritization**
+- **Prioritize important content** in mobile-first layouts.
+- Use **progressive disclosure** to reveal secondary content as needed.
+- Implement **off-canvas navigation** for smaller screens.
+
+## 🗺️ Navigation & Menus
+- Use **mobile-friendly navigation patterns** (e.g., hamburger menu for small screens).
+- Ensure **keyboard-accessible and screen-reader-friendly navigation**.
+- Consider a **sticky header for persistent navigation**.
+- **Implement breadcrumbs** for better site structure and user navigation.
+  - Use **structured data (`schema.org/BreadcrumbList`)** for SEO benefits.
+  - Keep breadcrumbs **consistent** and **visible**, preferably near the top of the page.
+  - Ensure **accessible navigation** for breadcrumbs (`aria-label="breadcrumb"`).
+  - Use **clickable links** except for the current page.
+  - Use **chevrons (`>`), slashes (`/`), or arrows (`→`)** as separators between links.
+  - Highlight the **current page** using a distinct color (e.g., gray) or bold text.
+  - Ensure breadcrumbs do not dominate the page’s UI—keep them **subtle yet visible**.
+  - **Limit breadcrumb depth on mobile** to **Home > Current Page**.
+  - Ensure breadcrumbs **wrap correctly** and do not cause horizontal scrolling.
+  - Implement **collapsible breadcrumbs** where necessary to maintain a clean UI.
+  - **Avoid hiding breadcrumbs with JavaScript**—ensure they are **visible in HTML for crawlers**.
+  - **Use meaningful anchor text** instead of generic labels:
+    - ✅ **Example (Good):** `"Shop > Boxing Gloves > Leather Gloves"`
+    - ❌ **Example (Bad):** `"Shop > Category > Product"`
+
+## ✍️ **Forms & Inputs**
+- Design **mobile-adaptive forms** with responsive layouts.
+- Use **input types that match expected data (`email`, `tel`, etc.)**.
+- Provide **real-time validation and error messages**.
+
+## 🛠️ **Testing & Validation**
+- Use **browser developer tools** to check responsiveness.
+- Test on **real devices, not just emulators**.
+- Conduct **usability testing** across multiple device types.
+
+---
+
+## 🚀 **Staying Up-to-Date**
+- Follow **modern UI/UX best practices** and responsive design trends.
+- Keep track of **browser updates and new CSS capabilities**.
+
+---

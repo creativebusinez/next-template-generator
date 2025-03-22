@@ -1,0 +1,28 @@
+---
+description: 
+globs: 
+---
+---
+description: AI rules for TypeScript best practices in Next.js.
+globs: **/*.{ts,tsx}
+---
+
+# 🚀 TypeScript AI Ruleset
+
+## 🏗️ Core TypeScript Practices
+- **Prefer interfaces over type aliases where applicable (`interface Props {}` vs `type Props = {}`).**
+- **Use explicit return types** instead of relying on inference.
+- **Use `unknown` instead of `any` for better type safety.**
+- **Enable strict mode (`strict: true`) in `tsconfig.json`.**
+- **Use `const` instead of `function` for defining functions (`const toggle = () => {...}`).**
+
+## 🏗️ Component Typing
+- **Define React component props using TypeScript interfaces.**
+- **Use `FC<Props>` or destructured props (`({ prop1, prop2 }: Props) => {...}`).**
+- **Use `React.forwardRef` for ref-based components.**
+- **Apply proper typing for event handlers (`(e: React.MouseEvent<HTMLButtonElement>) => void`).**
+
+## 🔐 Error Handling & Security
+- **Handle API errors properly using try/catch blocks.**
+- **Use Zod or Yup for runtime validation in API requests.**
+- **Ensure error boundaries (`ErrorBoundary`) are implemented in React apps.**

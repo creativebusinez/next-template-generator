@@ -283,3 +283,23 @@ The template includes an enhanced Tailwind configuration with:
 ## 📜 License
 
 MIT
+
+## Acknowledgments
+
+- This project was developed with assistance from Claude AI
+- Built on the excellent Next.js framework
+- Uses Tailwind CSS for styling
+- Incorporates Framer Motion for animations
+
+## AI Disclosure
+
+This project represents a collaborative effort between human creativity and AI capabilities. The initial concept was human-originated, but the development process was a significant collaboration with AI (Claude):
+
+- **Project Concept**: Human-originated idea for a Next.js template generator
+- **Implementation**: Extensive AI assistance in code generation and feature implementation
+- **Decision Making**: Collaborative process where human direction guided AI suggestions and implementations
+- **Code Generation**: Majority of code was AI-generated based on human requirements
+- **Documentation**: AI-assisted creation with human oversight
+- **Features**: Mix of human-requested and AI-suggested capabilities
+
+The AI (Claude) was used as more than just a development tool - it was an active participant in the development process, contributing to architecture decisions, feature suggestions, and implementation details while operating under human oversight and direction.

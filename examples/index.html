@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next.js Template Examples</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-gray-900">Next.js Template Examples</h1>
+                </div>
+                <div class="flex items-center">
+                    <a href="https://github.com/creativebusinez/next-template-generator" 
+                       class="text-gray-600 hover:text-gray-900">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Cyberpunk Example -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+                <div class="aspect-w-16 aspect-h-9 bg-gray-900">
+                    <img src="cyberpunk/preview.svg" alt="Cyberpunk Theme" class="object-cover">
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Cyberpunk Theme</h2>
+                    <p class="text-gray-600 mb-4">A futuristic design with glass morphism, neon effects, and interactive animations.</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-2">
+                            <span class="px-2 py-1 bg-indigo-100 text-indigo-800 text-xs rounded-full">Glass morphism</span>
+                            <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">Animations</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Interactive</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex items-center justify-between">
+                        <a href="cyberpunk/demo/index.html" 
+                           class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">
+                            View Demo
+                        </a>
+                        <a href="https://github.com/creativebusinez/next-template-generator/tree/main/examples/cyberpunk" 
+                           class="text-sm text-indigo-600 hover:text-indigo-900">
+                            View Code →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More examples will be added here -->
+            <div class="bg-gray-50 rounded-lg border-2 border-dashed border-gray-300 p-12 text-center">
+                <div class="text-gray-500">
+                    <p class="text-sm">More examples coming soon!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-gray-500 text-sm">
+                Built with Next.js, Tailwind CSS, and Framer Motion
+            </p>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,7 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#1F2937"/>
+  <rect x="50" y="50" width="700" height="350" rx="16" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)"/>
+  <rect x="100" y="100" width="600" height="250" rx="8" fill="rgba(79,70,229,0.1)" stroke="rgba(99,102,241,0.3)"/>
+  <text x="400" y="225" font-family="system-ui" font-size="48" font-weight="bold" fill="white" text-anchor="middle">Cyberpunk Future</text>
+  <text x="400" y="275" font-family="system-ui" font-size="24" fill="rgba(199,210,254,0.8)" text-anchor="middle">Modern UI with glass morphism</text>
+</svg> 

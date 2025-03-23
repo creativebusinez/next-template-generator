@@ -1,0 +1,43 @@
+{
+  "name": "cyberpunk-example",
+  "description": "A cyberpunk-themed Next.js template showcasing modern UI effects",
+  "version": "1.0.0",
+  "niche": "technology",
+  "features": {
+    "ui": [
+      "Glass morphism",
+      "Neon effects",
+      "Parallax backgrounds",
+      "Interactive animations",
+      "Floating elements"
+    ],
+    "components": [
+      "CyberHero",
+      "GlassCard",
+      "NeonButton",
+      "GridBackground"
+    ],
+    "animations": [
+      "Mouse tracking",
+      "Hover effects",
+      "Float animation",
+      "Pulse effects",
+      "Spring transitions"
+    ]
+  },
+  "styles": {
+    "theme": "dark",
+    "primaryColor": "indigo",
+    "accentColor": "purple",
+    "effects": [
+      "blur",
+      "glow",
+      "neon",
+      "grid"
+    ]
+  },
+  "preview": {
+    "image": "cyberpunk-preview.png",
+    "url": "https://cyberpunk-example.vercel.app"
+  }
+} 

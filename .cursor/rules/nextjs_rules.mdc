@@ -1,4 +1,9 @@
 ---
+description: 
+globs: 
+alwaysApply: false
+---
+---
 description: AI rules for Next.js static and dynamic site generation.
 globs: **/*.{js,ts,jsx,tsx}
 ---

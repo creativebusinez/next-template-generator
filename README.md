@@ -231,7 +231,41 @@ The Next.js Template Generator creates a foundation that you can extend using Cu
 
 ### 🤔 What is MCP?
 
-Model Context Protocol allows you to create custom tools that integrate with Cursor, enabling the AI editor to interact with external systems, APIs, databases, and custom data sources.
+Model Context Protocol allows you to create custom tools that integrate with Cursor and other supported clients, enabling AI models to securely interact with local and remote resources through standardized server implementations.
+
+### 🎯 Supported MCP Clients
+
+- 🖥️ Claude Desktop
+- 📝 Zed Editor
+- 🔍 Sourcegraph Cody
+- ⚡ Continue
+- 🤖 GPT Computer Assistant
+- 💬 LibreChat
+- ✨ Cursor
+- 🎨 Enconvo
+- 🦢 Goose
+
+### 🛠️ Available MCP Server Categories
+
+- 📂 **File Systems**: Local file access, backup, search
+- 🔄 **Version Control**: Git operations, repository management
+- ☁️ **Cloud Storage**: S3, Google Cloud Storage, etc.
+- 🗄️ **Databases**: SQL, NoSQL, vector databases
+- 💬 **Communication**: Slack, Discord, email integration
+- 📈 **Monitoring**: Error tracking, performance metrics
+- 🔍 **Search & Web**: Web scraping, search APIs
+- 🗺️ **Location Services**: Maps and geolocation
+- 📝 **Note Taking**: Obsidian, Notion integration
+- ⚡ **Cloud Platforms**: AWS, Cloudflare, Kubernetes
+- 🤖 **System Automation**: Shell access, task automation
+- 📱 **Social Media**: Platform APIs and content
+- 💹 **Finance**: Crypto data, payment processing
+- 🧬 **Research & Data**: Academic papers, datasets
+- 🤝 **AI Services**: OpenAI, HuggingFace integration
+- 📦 **Virtualization**: Docker, secure sandboxes
+- 💻 **Development Tools**: IDE integration, API testing
+- 📊 **Data Visualization**: Charts and graphs
+- 🆔 **Identity**: Auth and access management
 
 ### 💡 Implementation Possibilities
 
@@ -251,13 +285,29 @@ With MCP, you can extend your generated Next.js application in numerous ways:
 
 To implement MCP with your generated project:
 
-1. 🖥️ **Create an MCP Server**: Build a simple Express or Node.js server that implements the MCP protocol.
+1. 🖥️ **Choose or Create an MCP Server**: 
+   - Browse available servers at [awesome-mcp-servers](https://github.com/appcypher/awesome-mcp-servers)
+   - Or build your own using Node.js/Express, Python, or any language with WebSocket support
 
-2. 🛠️ **Define Custom Tools**: Create tool definitions that describe what capabilities you want to expose to Cursor.
+2. 🛠️ **Define Custom Tools**: 
+   - Create tool definitions in JSON schema format
+   - Specify required parameters and return types
+   - Document tool capabilities and limitations
 
-3. ⚙️ **Handle Tool Requests**: Implement the logic for your tools to fetch data, process information, or interact with external systems.
+3. ⚙️ **Handle Tool Requests**: 
+   - Implement WebSocket handlers for tool invocations
+   - Add authentication and rate limiting
+   - Handle errors and provide meaningful responses
 
-4. 🔗 **Connect to Cursor**: Configure Cursor to connect to your MCP server through the settings interface.
+4. 🔗 **Connect to Cursor**: 
+   - Configure Cursor to connect to your MCP server
+   - Set up authentication if required
+   - Test tool availability and functionality
+
+5. 📚 **Documentation**: 
+   - Document your tools and their usage
+   - Provide examples and common use cases
+   - Consider contributing to awesome-mcp-servers
 
 ### 🌟 Real-World Examples
 
@@ -303,3 +353,28 @@ This project represents a collaborative effort between human creativity and AI c
 - **Features**: Mix of human-requested and AI-suggested capabilities
 
 The AI (Claude) was used as more than just a development tool - it was an active participant in the development process, contributing to architecture decisions, feature suggestions, and implementation details while operating under human oversight and direction.
+
+## Examples
+
+To view the example templates and their live demos:
+
+```bash
+# Using npm script (recommended)
+npm run examples
+
+# Or using Python's built-in server
+python -m http.server 8000 --directory examples
+
+# Then open in your browser:
+# http://localhost:3000 (for npm serve)
+# http://localhost:8000 (for Python server)
+```
+
+Each example includes:
+- Live demo
+- Source code
+- Documentation
+- Ready-to-use components
+
+Current examples:
+- 🌟 Cyberpunk Theme - Modern UI with glass morphism and animations

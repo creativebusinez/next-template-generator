@@ -1,0 +1,7 @@
+{
+  "name": "next-template-generator",
+  "version": "1.0.0",
+  "scripts": {
+    "examples": "npx http-server examples -p 3000 -o"
+  }
+} 

@@ -15,6 +15,7 @@
 #   - Project niche: Choose from available niches (ecommerce, healthcare, technology).
 #   - Target audience: Specify the target audience for your project.
 #   - Brand tone: Define the brand tone (modern, professional, playful).
+#   - Project license: Enter the project license (MIT, Apache-2.0, GPL-3.0, proprietary, or press enter for none).
 #
 # The script will:
 #   - Create the project directory structure.
@@ -50,6 +51,7 @@ read -p "Enter project name (e.g., my-site): " PROJECT_NAME
 read -p "Enter project niche (ecommerce, blog, portfolio, technology): " NICHE_INPUT
 read -p "Enter target audience: " AUDIENCE
 read -p "Enter brand tone (modern, professional, playful): " BRAND_TONE
+read -p "Enter project license (MIT recommended, or press enter for none): " LICENSE_TYPE
 
 # Standardize niche name (lowercase and remove spaces)
 NICHE=$(echo "$NICHE_INPUT" | tr '[:upper:]' '[:lower:]' | tr -d ' ')
@@ -69,6 +71,11 @@ if [ "$NICHE_VALID" = false ]; then
   echo -e "${YELLOW}Warning: '$NICHE' is not a recognized niche. Using 'technology' as default.${NC}"
   echo -e "${YELLOW}Valid niches are: ${VALID_NICHES[*]}${NC}"
   NICHE="technology"
+fi
+
+# Standardize license name (uppercase and remove spaces)
+if [ -n "$LICENSE_TYPE" ]; then
+  LICENSE_TYPE=$(echo "$LICENSE_TYPE" | tr '[:lower:]' '[:upper:]' | tr -d ' ')
 fi
 
 # Remove whitespace from project name
@@ -122,9 +129,60 @@ cp -r "$TEMPLATE_DIR/pages/"* "$PROJECT_NAME/pages/"
 cp -r "$TEMPLATE_DIR/styles/"* "$PROJECT_NAME/styles/"
 cp -r "$TEMPLATE_DIR/utils/"* "$PROJECT_NAME/utils/"
 
-# Update package.json with project name
-echo -e "${CYAN}Updating package.json with project name...${NC}"
+# Update package.json with project name and license
+echo -e "${CYAN}Updating package.json with project name and license...${NC}"
 sed -i "s/\"name\": \"PLACEHOLDER_PROJECT_NAME\"/\"name\": \"$PROJECT_NAME\"/" "$PROJECT_NAME/package.json"
+if [ -n "$LICENSE_TYPE" ]; then
+  # If private is true and license is specified, remove private field
+  sed -i '/\"private\": true,/d' "$PROJECT_NAME/package.json"
+  # Add or update license field
+  if grep -q "\"license\":" "$PROJECT_NAME/package.json"; then
+    sed -i "s/\"license\": \".*\"/\"license\": \"$LICENSE_TYPE\"/" "$PROJECT_NAME/package.json"
+  else
+    sed -i "/\"version\": /a \  \"license\": \"$LICENSE_TYPE\"," "$PROJECT_NAME/package.json"
+  fi
+else
+  # If no license specified, ensure project is private
+  if ! grep -q "\"private\": true" "$PROJECT_NAME/package.json"; then
+    sed -i "/\"version\": /a \  \"private\": true," "$PROJECT_NAME/package.json"
+  fi
+fi
+
+# Create LICENSE file if a license type is specified
+if [ -n "$LICENSE_TYPE" ]; then
+  echo -e "${CYAN}Creating LICENSE file...${NC}"
+  case "$LICENSE_TYPE" in
+    "MIT")
+      cat > "$PROJECT_NAME/LICENSE" << EOF
+MIT License
+
+Copyright (c) $(date +%Y) $PROJECT_NAME
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+EOF
+      ;;
+    *)
+      echo -e "${YELLOW}Please visit https://choosealicense.com to get the license text for $LICENSE_TYPE${NC}"
+      echo -e "${YELLOW}and add it to the LICENSE file in your project.${NC}"
+      ;;
+  esac
+fi
 
 # Copy niche-specific components if they exist
 if [ -d "$TEMPLATE_DIR/niche/$NICHE" ]; then

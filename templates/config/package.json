@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "framer-motion": "11.0.5",
-    "next": "15.2.3",
+    "next": "15.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-twitter-embed": "4.0.4"
